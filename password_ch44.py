@@ -17,5 +17,9 @@ while left_chance > 0:
         print('登入成功')
         break #逃出迴圈
     else:
-        print('密碼錯誤! 還有', left_chance, '次機會')
+        print('密碼錯誤!' )
+        if left_chance > 0:
+            print('還有', left_chance, '次機會')
+        else:
+            print('沒機會了,你要鎖帳號了啦！ ')
         
