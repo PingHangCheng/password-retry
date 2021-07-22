@@ -8,7 +8,8 @@ password = 'a123456'
 '''
 password = 'a123456'
 number = 0
-while True:
+left_chance = 3-number #剩於機會
+while left_chance > 0:
     user_pwd = input('請輸入密碼(最多3次): ')
     number += 1
     left_chance = 3 - number
@@ -17,6 +18,4 @@ while True:
         break #逃出迴圈
     else:
         print('密碼錯誤! 還有', left_chance, '次機會')
-        if  left_chance == 0:
-            print('最多輸入3次,已無機會')
-            break
+        
